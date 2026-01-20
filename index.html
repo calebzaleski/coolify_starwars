@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="hero">
+
+    <div class="slides">
+
+        <div class="slide active" style="background-image: url('/Episode Covers/ep1.png')" data-link="/phantom-menace.html"></div> <!-- phantom -->
+        <div class="slide" style="background-image: url('/Episode Covers/ep2.png')" data-link="/attack-of-the-clones.html"></div> <!-- attack of the clones -->
+        <div class="slide" style="background-image: url('/Episode Covers/cw.png')" data-link="/clone-wars.html"></div> <!-- clone wars show -->
+        <div class="slide" style="background-image: url('/Episode Covers/cwm.png')" data-link="/clone-wars-movie.html"></div> <!-- clone wars movie -->
+        <div class="slide" style="background-image: url('/Episode Covers/ep3.png')" data-link="/revenge-of-the-sith.html"></div> <!-- rots -->
+        <div class="slide" style="background-image: url('/Episode Covers/bb.png')" data-link="/bad-batch.html"></div> <!-- bad batch -->
+        <div class="slide" style="background-image: url('/Episode Covers/totu.png')" data-link="/tales-of-the-underworld.html"></div> <!-- tales of the underworld -->
+        <div class="slide" style="background-image: url('/Episode Covers/ss.png')" data-link="/solo.html"></div> <!-- solo story -->
+        <div class="slide" style="background-image: url('/Episode Covers/epR1.png')" data-link="/rogue-one.html"></div> <!-- rouge 1 -->
+        <div class="slide" style="background-image: url('/Episode Covers/ep4.png')" data-link="/a-new-hope.html"></div> <!-- new hope -->
+        <div class="slide" style="background-image: url('/Episode Covers/ep5.png')" data-link="/empire-strikes-back.html"></div> <!-- empire strikes back -->
+        <div class="slide" style="background-image: url('/Episode Covers/ep6.png')" data-link="/return-of-the-jedi.html"></div> <!-- return of the jedi -->
+        <div class="slide" style="background-image: url('/Episode Covers/mando.png')" data-link="/mandalorian.html"></div> <!-- mando -->
+        <div class="slide" style="background-image: url('/Episode Covers/rbs.png')" data-link="/rebels.html"></div> <!-- rebels -->
+        <div class="slide" style="background-image: url('/Episode Covers/sc.png')" data-link="/skeleton-crew.html"></div> <!-- skeleton crew -->
+        <div class="slide" style="background-image: url('/Episode Covers/ep7.png')" data-link="/the-force-awakens.html"></div> <!-- the force awakens -->
+        <div class="slide" style="background-image: url('/Episode Covers/ep8.png')" data-link="/the-last-jedi.html"></div> <!-- the last jedi -->
+        <div class="slide" style="background-image: url('/Episode Covers/ep9.png')" data-link="/the-rise-of-skywalker.html"></div> <!-- the rise of skywalker -->
+
+
+
+    </div>
+</div>
+
+
+</body>
+
+<script>
+    const slides = document.querySelectorAll(".slide");
+    slides.forEach(slide => {
+        slide.addEventListener("click", () => {
+            const link = slide.dataset.link;
+            if (link) window.location.href = link;
+        });
+    });
+    let index = 0;
+
+    setInterval(() => {
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+    }, 6000); // 6 seconds like Disney+
+</script>
+</html>
