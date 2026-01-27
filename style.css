@@ -49,27 +49,7 @@
 
 }
 
-.titlebar {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 5;
 
-}
-
-.titlebar h1 {
-    color: #ffffff;
-    text-decoration: none;
-    padding-left: 20px;
-    font-size: 36px;
-    font-family: Arial, sans-serif;
-    font-weight: bolder;
-    z-index: 2;
-
-}
 
 body {
     position: absolute;
@@ -87,18 +67,19 @@ body {
     font-weight: bold;
     font-size: 28px;
     z-index: 2;
-    line-height: 45px;
     letter-spacing: 2px;
     font-family: STARWARS, sans-serif;
 
 }
 .content_left {
     text-align: left;
+    line-height: 45px;
 
 }
 
 .content_center {
     text-align: center;
+    line-height: 35px;
 
 }
 
@@ -149,4 +130,69 @@ html {
     src: url('https://static.wfonts.com/data/2016/06/08/starwars/STARWARS.woff') format('woff');
     font-display: swap;
 }
+footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
 
+.titlebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    border: 2px solid white;
+    border-radius: 20px;
+
+}
+
+.titlebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw; /* viewport width ensures full line */
+    padding: 0 20px;
+
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    flex-wrap: nowrap; /* prevent wrapping */
+}
+
+.titlebar h1 {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    z-index: 2;
+    padding-right: 20px ;
+
+}
+
+.characterwrapper {
+    display: flex;
+    padding-top: 100px;
+    text-align: center;
+
+}
+.character {
+    display: flex;
+    padding-left: 1vw;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 28px;
+    z-index: 2;
+    letter-spacing: 2px;
+    font-family: STARWARS, sans-serif;
+}
+.characterimg {
+    border-radius: 15px;
+}
