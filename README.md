@@ -1,2 +1,2 @@
 # coolify_starwars
-This is my webserver that is gives abunch of starwars info including the timeline order
+This is my webserver that is gives abunch of starwars. I have the timeline order by BBY/ABY, a slide show on the top that shows each movie/tv show in order that also displays the year it was made. I am also working on adding a characters tab!
