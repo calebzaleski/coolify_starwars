@@ -1,2 +1,2 @@
 # coolify_starwars
-This is my webserver that is gives abunch of starwars. I have the timeline order by BBY/ABY, a slide show on the top that shows each movie/tv show in order that also displays the year it was made. I am also working on adding a characters tab!
+This is my webserver that is gives abunch of starwars. I have the timeline order by BBY/ABY, a slide show on the top that shows each movie/tv show in order that also displays the year it was made. I am also working on adding a characters tab! I used wookiepedia to get the decriptions of the characters. I use a star background and the spin it at 360* by 2000 seconds to make it seem like they are stars.
