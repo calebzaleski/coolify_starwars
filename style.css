@@ -130,12 +130,14 @@ html {
     src: url('https://static.wfonts.com/data/2016/06/08/starwars/STARWARS.woff') format('woff');
     font-display: swap;
 }
-footer {
+footer, footer a {
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     position: relative;
+    gap: 10px;
 }
 
 .titlebar a {
@@ -183,7 +185,7 @@ footer {
     text-align: center;
 
 }
-.character {
+.character h1, .character b{
     display: flex;
     padding-left: 1vw;
     color: #ffffff;
@@ -192,6 +194,8 @@ footer {
     z-index: 2;
     letter-spacing: 2px;
     font-family: STARWARS, sans-serif;
+    flex-direction: row;
+
 }
 .characterimg {
     border-radius: 15px;
